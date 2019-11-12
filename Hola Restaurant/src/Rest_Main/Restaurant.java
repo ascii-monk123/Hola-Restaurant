@@ -4,7 +4,7 @@ public class Restaurant {
     public  String orders[]=new String[20];
     public double totalBill;
 
-    public  Restaurant(double bill[],String o[]) {
+    public void setData(double bill[],String o[]) {
         if (bill.length > 0 && o.length > 0) {
             this.bills = bill;
             this.orders = o;
