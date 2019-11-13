@@ -2,12 +2,14 @@ package Rest_Main;
 public class Restaurant {
     public double bills[]=new double[20];
     public  String orders[]=new String[20];
+    public int quantity[]=new int[20];
     public double totalBill;
 
-    public void setData(double bill[],String o[]) {
+    public void setData(double bill[],String o[],int quantity[]) {
         if (bill.length > 0 && o.length > 0) {
             this.bills = bill;
             this.orders = o;
+            this.quantity=quantity;
         }
         else{
             System.out.println("\nInvalid amount of bill and orders printed\n");

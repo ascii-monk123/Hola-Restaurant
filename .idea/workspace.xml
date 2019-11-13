@@ -2,11 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6834a809-4a42-4d6d-aff6-7953f3c4230d" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Hola Restaurant/src/display/Display.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Hola Restaurant/src/showDetails/show.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Hola Restaurant/src/Menu_info/Menu.java" beforeDir="false" afterPath="$PROJECT_DIR$/Hola Restaurant/src/Menu_info/Menu.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Hola Restaurant/dist/production/Hola Restaurant/Rest_Main/Restaurant.class" beforeDir="false" afterPath="$PROJECT_DIR$/Hola Restaurant/dist/production/Hola Restaurant/Rest_Main/Restaurant.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Hola Restaurant/dist/production/Hola Restaurant/main/Dis.class" beforeDir="false" afterPath="$PROJECT_DIR$/Hola Restaurant/dist/production/Hola Restaurant/main/Dis.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Hola Restaurant/dist/production/Hola Restaurant/main/Start.class" beforeDir="false" afterPath="$PROJECT_DIR$/Hola Restaurant/dist/production/Hola Restaurant/main/Start.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Hola Restaurant/src/Rest_Main/Restaurant.java" beforeDir="false" afterPath="$PROJECT_DIR$/Hola Restaurant/src/Rest_Main/Restaurant.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Hola Restaurant/src/main/Start.java" beforeDir="false" afterPath="$PROJECT_DIR$/Hola Restaurant/src/main/Start.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -18,6 +20,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Class" />
+        <option value="Interface" />
       </list>
     </option>
   </component>
@@ -46,7 +49,7 @@
     </option>
   </component>
   <component name="RunManager">
-    <configuration name="Start" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+    <configuration name="Start" type="Application" factoryName="Application" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="main.Start" />
       <module name="Hola Restaurant" />
       <extension name="coverage">
@@ -59,11 +62,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <recent_temporary>
-      <list>
-        <item itemvalue="Application.Start" />
-      </list>
-    </recent_temporary>
   </component>
   <component name="SvnConfiguration">
     <configuration />
