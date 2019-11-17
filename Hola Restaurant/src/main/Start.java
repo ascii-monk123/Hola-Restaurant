@@ -3,15 +3,63 @@ import java.sql.SQLOutput;
 import java.util.Scanner;
 import Menu_info.*;
 import Rest_Main.*;
+import com.sun.scenario.effect.impl.sw.sse.SSEBlend_SRC_OUTPeer;
 import com.sun.xml.internal.ws.api.model.wsdl.WSDLOutput;
+import com.sun.xml.internal.ws.policy.privateutil.PolicyUtils;
 import display.Display;
 import customers.Customer;
 import static java.lang.System.exit;
 import showDetails.show;
+import java.io.*;
 
 abstract public class Start implements show {
     public static void main (String args[]){
         Scanner sc=new Scanner(System.in);
+        System.out.println("\nAuthentication started\n");
+        String auth[]=new String[2];
+         BufferedReader rs=new BufferedReader(new InputStreamReader(System.in));
+
+         try {
+             System.out.println("Enter your name\n");
+             auth[0] = rs.readLine();
+             System.out.println("Enter the password\n");
+             auth[1]=rs.readLine();
+
+         }
+         catch(IOException e){
+             System.out.println(e);
+         }
+
+        BufferedReader reader;
+        try{
+            InputStream is = Start.class.getResourceAsStream("authentic.txt");
+            reader=new BufferedReader(new InputStreamReader(is));
+            int ind=0;
+            String line;
+            while((line=reader.readLine())!=null){
+                if(auth[ind].equals(line)){
+                    System.out.println("\n"+line);
+                    ind++;
+
+                }
+                else{
+                    System.out.println("\nInvalid Details the programme is closing down");
+                    return;
+                }
+            }
+            reader.close();
+
+        }
+        catch(FileNotFoundException e){
+            System.out.println("\nSorry the file cannot be found\n");
+
+        }
+        catch(IOException E){
+            System.out.println("IO exception :"+E);
+        }
+
+
+
 
         Restaurant r[]=new Restaurant[20];
         Customer c[]=new Customer[20];
@@ -101,24 +149,28 @@ abstract public class Start implements show {
                         }
 
                     }
-                    r[index]=new Restaurant();
-                    r[index].setData(bills,orders,quantity);
-                    System.out.println("\nCustomer name is \n"+" "+ c[index].name);
-                    System.out.println("\nYour bill amount is "+r[index].calculateBill());
-                    System.out.println("\nDo you want to add a tip Y for yes and N for no");
-                    String giveTip=sc.nextLine();
-                    if(giveTip.equals("Y")){
-                        System.out.println("\nEnter the tip amount 5 ,10 0r 15 dollar only\n");
-                        double tip=sc.nextInt();
-                        if(tip==5||tip==10||tip==15) {
-                            r[index].tip(true, tip);
-                            System.out.println("\nYour amount after giving the tip is" + " " + r[index].totalBill);
+                    try {
+                        r[index] = new Restaurant();
+                        r[index].setData(bills, orders, quantity);
+                        System.out.println("\nCustomer name is \n" + " " + c[index].name);
+                        System.out.println("\nYour bill amount is " + r[index].calculateBill());
+                        System.out.println("\nDo you want to add a tip Y for yes and N for no");
+                        String giveTip = sc.nextLine();
+                        if (giveTip.equals("Y")) {
+                            System.out.println("\nEnter the tip amount 5 ,10 0r 15 dollar only\n");
+                            double tip = sc.nextInt();
+                            if (tip == 5 || tip == 10 || tip == 15) {
+                                r[index].tip(true, tip);
+                                System.out.println("\nYour amount after giving the tip is" + " " + r[index].totalBill);
+                            } else {
+                                System.out.println("\nInvalid tip amount entered .Sorry as a caution tip will be cancelled imediatelly\n");
+                            }
                         }
-                        else{
-                            System.out.println("\nInvalid tip amount entered .Sorry as a caution tip will be cancelled imediatelly\n");
-                        }
+                        File file=new File();
                     }
-
+                    catch(IOException e){
+                        System.out.println("Exception occured_>"+" "+e);
+                    }
 
                     break;
                 case 2:
@@ -139,6 +191,17 @@ abstract public class Start implements show {
 
                     break;
                 case 3:
+                    System.out.println("\nThe total money for the restaurant is \n");
+                    double totalMoney=0.0;
+                    for(int i=0;i<=index;i++){
+                        totalMoney+=r[index].totalBill;
+                    }
+                    if(totalMoney<=0){
+                        System.out.println("\nThere is no total money currently\n");
+                    }
+                    else{
+                        System.out.println("\nThe total Money with the restaurant is"+" "+totalMoney);
+                    }
                     break;
 
                 case 4:

@@ -2,12 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6834a809-4a42-4d6d-aff6-7953f3c4230d" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Hola Restaurant/src/showDetails/show.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Hola Restaurant/src/main/authentic.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Hola Restaurant/dist/production/Hola Restaurant/Rest_Main/Restaurant.class" beforeDir="false" afterPath="$PROJECT_DIR$/Hola Restaurant/dist/production/Hola Restaurant/Rest_Main/Restaurant.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Hola Restaurant/dist/production/Hola Restaurant/main/Dis.class" beforeDir="false" afterPath="$PROJECT_DIR$/Hola Restaurant/dist/production/Hola Restaurant/main/Dis.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Hola Restaurant/dist/production/Hola Restaurant/main/Start.class" beforeDir="false" afterPath="$PROJECT_DIR$/Hola Restaurant/dist/production/Hola Restaurant/main/Start.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Hola Restaurant/src/Rest_Main/Restaurant.java" beforeDir="false" afterPath="$PROJECT_DIR$/Hola Restaurant/src/Rest_Main/Restaurant.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Hola Restaurant/src/main/Start.java" beforeDir="false" afterPath="$PROJECT_DIR$/Hola Restaurant/src/main/Start.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -35,6 +33,11 @@
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.0" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Aahan Singh Charak\Desktop\Restaurant Customer Data\Hola Restaurant\src\main" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
