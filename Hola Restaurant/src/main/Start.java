@@ -166,7 +166,29 @@ abstract public class Start implements show {
                                 System.out.println("\nInvalid tip amount entered .Sorry as a caution tip will be cancelled imediatelly\n");
                             }
                         }
-                        File file=new File();
+                        File file=new File("C:\\Users\\Aahan Singh Charak\\Desktop\\Restaurant Customer Data\\Hola Restaurant\\src\\main\\"+c[index].name+".txt");
+                        if(file.createNewFile()) System.out.println("\nSuccess\n");
+                        else System.out.println("\nFile already exists\n");
+                        FileWriter f=new FileWriter(file);
+                        PrintWriter p=new PrintWriter(f);
+                        p.println("User Details File :");
+                        p.println("**************************************************");
+                        p.println("Name :"+c[index].name);
+                        p.println("Order list:");
+                       int i=0;
+                       while(r[index].orders[i]!=null) {
+                           p.println("Item : " + r[index].orders[i]);
+                           p.println("quantity: " + r[index].quantity[i]);
+                           p.println("bill: " + r[index].bills[i]);
+                           p.println("Total bill: " + r[index].totalBill);
+                           p.println();
+                           p.println();
+                           i++;
+                       }
+
+                        p.close();
+
+
                     }
                     catch(IOException e){
                         System.out.println("Exception occured_>"+" "+e);
